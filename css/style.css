@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(145, 127, 127);
+    font-family: arial,sans-serif;
+    color: rgb(3, 57, 156);
+    padding: 24px 12px;
+}
+header{
+    text-align: center;
+    margin-bottom: 45px;
+}
+header h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+header h4{
+    color: black;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+header h5{
+    color: black;
+    font-size: 25px ;
+}
+main{
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: white ;
+    border: 40px;
+    border-color: black;
+    border-radius: 15px;
+    padding: 42px 32px 30px;
+}
