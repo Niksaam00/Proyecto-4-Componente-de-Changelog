@@ -1,33 +1,200 @@
-body{
+body {
     background-color: rgb(145, 127, 127);
-    font-family: arial,sans-serif;
+    font-family: arial, sans-serif;
     color: rgb(3, 57, 156);
     padding: 24px 12px;
 }
-header{
+
+header {
     text-align: center;
     margin-bottom: 45px;
 }
-header h1{
+
+header h1 {
     font-size: 60px;
     font-weight: 500;
     margin-bottom: 10px;
 }
-header h4{
+
+header h4 {
     color: black;
     font-size: 28px;
     margin-bottom: 8px;
 }
-header h5{
+
+header h5 {
     color: black;
-    font-size: 25px ;
+    font-size: 25px;
 }
-main{
+
+main {
     max-width: 850px;
     margin: 0 auto;
-    background-color: white ;
+    background-color: white;
     border: 40px;
     border-color: black;
     border-radius: 15px;
     padding: 42px 32px 30px;
+}
+
+main a {
+    margin: 0 auto;
+}
+
+.lineaTiempo {
+    max-width: 650px;
+    margin: 32px auto 24px;
+    position: relative;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 31% 6% 63%;
+    align-items: start;
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+article ::before {
+    content: "";
+    position: absolute;
+    left: 33.9%;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background-color: black;
+}
+
+time {
+    text-align: right;
+    padding-right: 12px;
+    color: black;
+}
+
+span {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 3px auto 0;
+}
+
+.CaracteristicasCambio h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.CaracteristicasCambio h3 {
+    color: black;
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+a {
+    align-items: center;
+    text-align: center;
+    margin-top: 30pxs;
+    margin: auto;
+}
+
+button {
+    display: inline-block;
+    background-color: rgb(27, 89, 182);
+    color: black;
+    border-radius: 15px;
+    margin: auto;
+}
+
+a :hover {
+    background-color: white;
+    color: blue;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px 8px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header h4 {
+        font-size: 21px;
+    }
+
+    header h5 {
+        font-size: 18px;
+    }
+
+    main {
+        padding: 24px 12px;
+        border-radius: 12px;
+        width: auto;
+    }
+
+    .lineaTiempo {
+        width: 100%;
+        margin: 24px auto;
+    }
+
+    article {
+        grid-template-columns: 25% 8% 67%;
+        gap: 0;
+        margin-bottom: 24px;
+    }
+
+    article::before {
+        display: none;
+    }
+
+    .lineaTiempo {
+        position: relative;
+    }
+
+    .lineaTiempo::before {
+        content: "";
+        position: absolute;
+        left: 29%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: black;
+    }
+
+    time {
+        font-size: 12px;
+        padding-right: 6px;
+        overflow-wrap: break-word;
+    }
+
+    span {
+        width: 12px;
+        height: 12px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .CaracteristicasCambio {
+        min-width: 0;
+        overflow-wrap: break-word;
+    }
+
+    .CaracteristicasCambio h2 {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .CaracteristicasCambio h3 {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    button {
+        max-width: 100%;
+        padding: 10px 16px;
+    }
 }
